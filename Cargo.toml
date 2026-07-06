@@ -1,0 +1,18 @@
+[package]
+name = "tidebinder"
+version = "0.1.0"
+edition = "2021"
+license = "UNLICENSED"
+publish = false
+
+[lib]
+name = "tidebinder"
+path = "src/lib.rs"
+
+[profile.dev]
+overflow-checks = true
+
+[profile.release]
+debug = 1
+overflow-checks = true
+panic = "abort"
